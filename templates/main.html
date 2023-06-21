@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Prime
+    </title>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+
+    <link rel="stylesheet" href="{%static 'css/custom.css'%}" type="text/css"/>
+
+     <!-- Favicons -->
+    <link href="{%static 'img/pngwing.com.png'%}" rel="icon" type="image/png">
+    <link href="{%static 'img/pngwing.com.png'%}" rel="apple-touch-icon">
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <meta name="author" content="karthikraj" />
+
+
+
+
+
+    <style>
+        a{
+           text-decoration: none;
+        }
+        .product-viewtag{
+           background-color: red;
+           color: #fff;
+           font-size: 11px;
+           line-height: 1;
+           position: absolute;
+           text-align: center;
+           text-transform: uppercase;
+           top: 22px;
+           margin-left: 17.5rem;
+           padding: 7px 10px;
+           font-weight: 600;
+           min-width: 45px;
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+    {% endblock content %}
+
+
+    <!-- jQery -->
+    <script src="{%static 'js/jquery-3.4.1.min.js'%}"></script>
+    <script src="{%static 'js/custom.js'%}"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+
+    {% block scripts %}
+
+    {% endblock scripts %}
+
+    <script src="{%static 'js/checkout.js'%}"></script>
+
+
+
+
+</body>
+</html>

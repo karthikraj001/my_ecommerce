@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="refresh" content="30">
+    <!-- Mobile Metas -->
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <title>About</title>
+
+
+
+
+    <!-- Favicons -->
+    <link href="{%static 'img/a.jpg'%}" rel="icon" type="image/png">
+    <link href="{%static 'img/a.jpg'%}" rel="apple-touch-icon">
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <meta name="author" content="karthikraj" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" href="{%static 'css/bootstrap.css'%}" type="text/css"/>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" type="text/css"/>
+    <!-- font awesome style -->
+    <link href="{%static 'css/font-awesome.min.css'%}" rel="stylesheet" method="get"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{%static 'css/nav.css'%}" type="text/css"/>
+    <link rel="stylesheet" href="{%static 'css/responsive.css'%}" type="text/css"/>
+
+    <link rel="stylesheet" href="{%static 'css/index.html'%}" type="text/css"/>
+
+
+    <link rel="stylesheet" href="C:\Users\ROBIN\Pictures\fontawesome-free-6.1.1-web\css" type="text/css"/>
+
+</head>
+
+<body>
+    <div class="py-3 btn-warning">
+        <div class="container">
+            <a class="text-white" href="{% url 'index' %}"> Home /</a>
+            <a class="text-white" href="{% url 'about' %}"> About /</a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h7>About Us</h7>
+        <hr>
+        <div class="paragraph">
+        <p><n>Amazing well grown e-shop company.</n>
+            <n>Our company located in india.<n/>
+                <n>We serving for the people for few decades.</n>
+                <n>We started this company with two people now we are national level wide.</n>
+                <n>Customer satisfaction is important for us we will work hard for them.</n>
+                <n>Thank you<n/></p>
+        </div>
+        <h7>Our Growth Chart</h7>
+        <img src="{% static 'img/aboutus.png'%}" alt="" width="100%">
+        <h7>Our List Of Details</h7>
+        <img src="{% static 'img/aboutus2.png'%}" alt="" width="100%">
+        <h7>Our List Of Shipping</h7>
+        <img src="{% static 'img/aboutus3.png'%}" alt="" width="100%">
+    </div>
+</body>
+</html>

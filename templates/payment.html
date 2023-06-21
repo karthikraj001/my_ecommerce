@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="refresh" content="30">
+    <!-- Mobile Metas -->
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <title>Prime</title>
+
+
+    <!-- Favicons -->
+    <link href="{%static 'img/a.jpg'%}" rel="icon" type="image/png">
+    <link href="{%static 'img/a.jpg'%}" rel="apple-touch-icon">
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <meta name="author" content="karthikraj" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" href="{%static 'css/bootstrap.css'%}" type="text/css"/>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" type="text/css"/>
+    <!-- font awesome style -->
+    <link href="{%static 'css/font-awesome.min.css'%}" rel="stylesheet" method="get"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{%static 'css/nav.css'%}" type="text/css"/>
+    <link rel="stylesheet" href="{%static 'css/responsive.css'%}" type="text/css"/>
+
+
+
+    <link rel="stylesheet" href="C:\Users\ROBIN\Pictures\fontawesome-free-6.1.1-web\css" type="text/css"/>
+
+
+
+
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="">
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname">
+                                <i class="fa fa-user"></i>Full Name
+                            </label>
+                            <input type="text" id="fname" placeholder="Your Name" name="firstname">
+                            <label for="email">
+                                <i class="fa fa-envelope"></i>Email
+                            </label>
+                            <input type="email" id="email" placeholder="Enter Your Email" name="email">
+                            <label for="adr">
+                                <i class="fa fa-address-card-o"></i>Address
+                            </label>
+                            <input type="text" id="adr" placeholder="Enter Your Address" name="address">
+                            <label for="city">
+                                <i class="fa fa-institution"></i>City
+                            </label>
+                            <input type="text" id="city" placeholder="Enter Your City" name="city">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">
+                                    State
+                                </label>
+                                <input type="text" id="state" placeholder="Enter Your State" name="state">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">
+                                    Zip
+                                </label>
+                                <input type="text" id="zip" placeholder="Enter Your Zipcode" name="zip">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color: navy;"></i>
+                            <i class="fa fa-cc-amex" style="color: blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                            <i class="fa fa-cc-discover" style="color: orange;"></i>
+                        </div>
+                        <label for="cname">Name On Card</label>
+                        <input type="text" id="cname" placeholder="Enter Your Cardname" name="cardname">
+                        <label for="ccnum">Credit Card Number</label>
+                        <input type="text" id="ccnum" placeholder="Enter Your Cardnumber" name="cardnumber">
+                        <label for="expmonth">Expiry Month</label>
+                        <input type="text" id="expmonth" placeholder="Enter Your Expiry Month" name="expmonth">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Expiry Year</label>
+                                <input type="text" id="expyear" placeholder="Enter Your Expiry Year" name="expyear">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="Enter Your CVV" name="cvv">
+                            </div>
+                        </div>
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr">Shipping address same as billing
+                    </label>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart
+                    <span class="price" style="color: black">
+                        <i class="fa fa-shopping-cart"></i>
+                        <b>4</b>
+                    </span>
+                </h4>
+                <p><a href="#">Product 1</a>
+                    <span class="price">$15</span></p>
+                <p><a href="#">Product 2</a>
+                    <span class="price">$15</span></p>
+                <p><a href="#">Product 3</a>
+                    <span class="price">$15</span></p>
+                <p><a href="#">Product 4</a>
+                    <span class="price">$15</span></p>
+                <hr>
+                <p>Total
+                    <span class="price" style="color:black">
+                        <b>$30</b>
+                    </span>
+                </p>
+                <button type="submit">Pay</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
